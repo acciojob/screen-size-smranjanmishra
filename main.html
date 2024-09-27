@@ -1,23 +1,10 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body onload="getSize()" onresize="getSize()">
-	<div id="sizeInfo"> 
-	</div>
-	
-    <script type="text/javascript">
-		function getSize() {
-			var w = document.documentElement.clientWidth;
-			var h = document.documentElement.clientHeight;
-			document.getElementById('sizeInfo').innerHTML = "<h1>Width: " + w + " and Height: " + h + "</h1>";
-		}
-	</script>
-
-</body>
-
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="sizeInfo"></div>
+    <script src="script.js"></script>
+  </body>
 </html>
