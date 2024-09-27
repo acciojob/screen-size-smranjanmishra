@@ -1,13 +1,15 @@
-// Function to update the size information
-function updateSize() {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-    const sizeInfo = document.querySelector('#sizeInfo h1');
-    sizeInfo.textContent = `Width: ${width} and Height: ${height}`;
-}
-
-// Update size on page load
-updateSize();
-
-// Update size when the window is resized
-window.addEventListener('resize', updateSize);
+//your JS code here. If required.
+  let height=this.innerHeight;
+    let width=this.innerWidth;
+   let div=document.getElementById("sizeInfo");
+    let h=div.firstChild;
+    h.innerText="Width: "+width+" and Height: "+height;  
+window.addEventListener("resize",function(){
+    let height=this.innerHeight;
+    let width=this.innerWidth;
+   let div=document.getElementById("sizeInfo");
+    let h=div.firstChild;
+ 
+    h.innerText="Width: "+width+" and Height: "+height; 
+  
+  })
